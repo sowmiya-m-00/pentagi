@@ -95,7 +95,7 @@ RUN go build -trimpath \
     -o /etester ./cmd/etester
 
 # STEP 3: Build the final image
-FROM alpine:3.23.3
+FROM alpine:3.24.3
 
 # Create non-root user and docker group with specific GID
 RUN addgroup -g 998 docker && \
